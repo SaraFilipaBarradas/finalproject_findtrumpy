@@ -1,0 +1,112 @@
+
+.background-container {
+    position: relative;
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(84, 207, 223); */
+    /* background-image: linear-gradient(to bottom, rbg(209, 228, 117), rbg(84, 207, 223)); */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .background-container img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+  }
+  
+  #overlay-trumpy {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    max-width: 220px;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    cursor: default;
+  }
+
+ 
+
+#overlay-trumpy2 {
+  position: absolute;
+  top: 68%;
+  transform: translateY(-50%);  /* Centers the image vertically */
+  right: 0;
+  max-width: 20vw;  /* Adjust this value to scale with the viewport width */
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  cursor: default;
+}
+  
+  .title-box {
+    position: absolute;
+    top: 10%;
+    background-color: rgb(25, 148, 218);
+    width: 100%;
+    border: solid 15px rgb(244, 106, 14);
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    font-size: 15px;
+    text-align: center;
+    /* border: solid red; */
+    padding: 20px;
+}
+
+  .title {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  /* Small screen */
+
+  @media screen and (max-width: 768px) {
+    #overlay-trumpy {
+      max-width: 40%;
+      height: auto;
+    }
+    
+
+    .background-container {
+      max-width: 200%; 
+      overflow: scroll; 
+  }
+
+  .background-container img{
+    width: 200%;
+    max-width: 200%;
+}
+  }
+
+  /* Medium screen */
+
+  @media screen and (min-width: 769px) {
+    #overlay-trumpy {
+      max-width: 20%;
+      height: auto;
+    }
+    
+  }
+
+  /* Large screen */
+
+  @media screen and (min-width: 1367px) {
+    #overlay-trumpy {
+      max-width: 20%;
+      height: auto;
+      left: 20%;
+    }
+    
+  }
