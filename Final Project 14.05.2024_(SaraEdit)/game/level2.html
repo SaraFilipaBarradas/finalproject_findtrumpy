@@ -15,21 +15,24 @@
 </head>
 
 <body>
-    <div class="container-fluid background-container">
-      <img src="../img/Savana_final_.jpg" class="img-fluid card-image-top" alt="Trumpy Savana">
+    <div class="container-fluid background-container" id="background-savanna">
+      <img src="../img/Savana_final_.jpg" class="img-fluid card-image-top" alt="Trumpy in the Savanna">
       <!-- <div class="card-image-overlay card-inverse title-box title"> -->
         <div class="title-box title">
         <h1 class="title">Level 2</h1>
         <p>Can you find Trumpy?</p>
       </div>
         <div>
-            <a href="../game/success.html" id="trumpy-found"><img src="../img/trump_savana_final.png" id="overlay-trumpy2" class="img-fluid"></a> 
+            <!-- <a href="../game/success.html" id="trumpy-found"> -->
+              <img src="../img/trump_savana_final.png" id="overlay-trumpy2" class="img-fluid">
+            <!-- </a>  -->
         </div>
+        <audio id="trump-sound-savanna" src="../audio/Trump-Savana-short.mp3" preload="auto">Your browser does not support the audio element</audio>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="../script.js"></script>
+  <script src="./script-game.js"></script>
 </body>
 
 </html>

@@ -15,21 +15,23 @@
 </head>
 
 <body>
-    <div class="container-fluid background-container">
+    <div class="container-fluid background-container" id="background-sea">
       <img src="../img/Trump and others_more vertical.jpg" class="img-fluid card-image-top" alt="Trumpy under the sea">
-      <!-- <div class="card-image-overlay card-inverse title-box title"> -->
         <div class="title-box title">
         <h1 class="title">Level 1</h1>
         <p>Can you find Trumpy?</p>
       </div>
         <div>
-            <a href="../game/Level 1 and 2 interim.html" id="trumpy-found"><img src="../img/Trumpy fish.png" id="overlay-trumpy" class="img-fluid"></a> 
+            <!-- <a href="../game/Level 1 and 2 interim.html" id="trumpy-found"> -->
+              <img src="../img/Trumpy fish.png" id="overlay-trumpy" class="img-fluid">
+            <!-- </a>  -->
         </div>
+        <audio id="trump-sound-sea" src="../audio/Trump-Mother-Fisher-short.mp3" preload="auto">Your browser does not support the audio element</audio>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="../script.js"></script>
+  <script src="./script-game.js"></script>
 </body>
 
 </html>

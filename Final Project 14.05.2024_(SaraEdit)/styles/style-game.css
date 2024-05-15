@@ -5,8 +5,6 @@
     flex-basis: auto;
     align-items: center;
     justify-content: center;
-    /* background-color: rgb(84, 207, 223); */
-    /* background-image: linear-gradient(to bottom, rbg(209, 228, 117), rbg(84, 207, 223)); */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -18,6 +16,10 @@
     height: auto;
     margin: 0;
     display: block;
+  }
+
+  .container-fluid.background-container {
+    padding: 0;
   }
   
   #overlay-trumpy {
@@ -37,9 +39,9 @@
 #overlay-trumpy2 {
   position: absolute;
   top: 68%;
-  transform: translateY(-50%);  /* Centers the image vertically */
+  /* transform: translateY(-50%);  Centers the image vertically */
   right: 0;
-  max-width: 20vw;  /* Adjust this value to scale with the viewport width */
+  max-width: 220px;  /* Adjust this value to scale with the viewport width */
   background-color: rgba(0, 0, 0, 0);
   justify-content: center;
   align-items: center;
@@ -50,13 +52,13 @@
   .title-box {
     position: absolute;
     top: 10%;
-    background-color: rgb(25, 148, 218);
-    width: 100%;
-    border: solid 15px rgb(244, 106, 14);
+    background-color: rgb(5, 82, 128);
+    width: 50%;
+    border: solid 5px rgb(226, 130, 66);
     justify-content:center;
     align-items: center;
     align-content: center;
-    font-size: 15px;
+    font-size: 1.5rem;
     text-align: center;
     /* border: solid red; */
     padding: 20px;
@@ -68,6 +70,7 @@
     font-style: normal;
     color: rgb(255, 255, 255);
     text-align: center;
+
   }
 
   /* Small screen */
@@ -76,17 +79,37 @@
     #overlay-trumpy {
       max-width: 40%;
       height: auto;
+      left: 0;
     }
-    
+
+    #overlay-trumpy2 {
+      max-width: 40%;
+      height: auto;
+      right: -50%;
+    }
+
+    .title-box {
+      position: absolute;
+      top: 10%;
+      background-color: rgb(25, 148, 218);
+      width: 200%;
+      border: solid 15px rgb(244, 106, 14);
+      justify-content:center;
+      align-items: center;
+      align-content: center;
+      text-align: center; 
+  }
 
     .background-container {
       max-width: 200%; 
+      background-position: top center;
       overflow: scroll; 
   }
 
   .background-container img{
     width: 200%;
     max-width: 200%;
+    background-position: top;
 }
   }
 
@@ -96,6 +119,11 @@
     #overlay-trumpy {
       max-width: 20%;
       height: auto;
+    }
+    #overlay-trumpy2 {
+      max-width: 30%;
+      height: auto;
+      top: 58%;
     }
     
   }
@@ -107,6 +135,27 @@
       max-width: 20%;
       height: auto;
       left: 20%;
+    }
+
+    #overlay-trumpy2 {
+      max-width: 20%;
+      height: auto;
+      right: 13%;
+      top: 60%;
+    }
+
+    .background-container img{
+      width: 75%;
+      max-width: 80%;
+  }
+
+  #background-sea {
+    background-color: rgb(8, 19, 77);
+  }
+
+    .container-fluid.background-container {
+      /* background-image: url("../img/Trump_background_blue_suit.jpg"); */
+      background-color:rgb(8, 50, 20);
     }
     
   }
