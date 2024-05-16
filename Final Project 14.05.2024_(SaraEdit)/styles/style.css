@@ -76,6 +76,10 @@ body {
   cursor: pointer;
 }
 
+.start-button:hover {
+  background-color: rgb(205, 138, 13);
+}
+
 .btn-secondary {
   background-color: #97989b;
   font-family: "IBM Plex Mono", monospace;
@@ -89,6 +93,10 @@ body {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #7c7d80;
 }
 
 .reviews {
